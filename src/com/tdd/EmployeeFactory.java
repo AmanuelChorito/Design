@@ -1,18 +1,20 @@
 package com.tdd;
 
-public abstract class EmployeeFactory {
-    private Employee employee;
+public  class EmployeeFactory {
 
+private Employee employee=null;
 
     public Employee createEmployeeType(String name) {
-        if (name=="W") {
-            employee = new ExpeDev();
 
-        } else if(name=="X"){
+        if (name.equals("W")) {
+            System.out.println("Expe dev");
+           employee= new ExpeDev();
+
+        } else if(name.equals("X")){
             employee = new TraineeDev();
         }else{
             employee = new TraineeQa();
         }
-        return null;
+        return employee;
     }
 }

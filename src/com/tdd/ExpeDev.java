@@ -5,6 +5,6 @@ public class ExpeDev extends Experinced {
 
     @Override
     public String getName() {
-        return name;
+        return ExpeDev.class.getName();
     }
 }

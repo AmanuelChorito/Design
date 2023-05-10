@@ -5,6 +5,6 @@ public class TraineeQa extends Trainee {
 
     @Override
     public String getName() {
-        return null;
+        return super.getName();
     }
 }
